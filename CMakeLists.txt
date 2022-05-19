@@ -1,7 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 project(CLI VERSION 0.0.1)
 am_init("Naville")
-#add_executable(CLI main.c)
-#install(TARGETS CLI DESTINATION bin)
 am_add_tweak(NAME Sample SRCS "${CMAKE_CURRENT_LIST_DIR}/Tweak.xm")
-include(CPack)
+am_add_tool(NAME CLI SRCS "${CMAKE_CURRENT_LIST_DIR}/main.c")
