@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.10)
+project(CLI VERSION 0.0.1)
+am_init("Naville")
+add_executable(CLI main.c)
+install(TARGETS CLI DESTINATION bin)
+include(CPack)
